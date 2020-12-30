@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   motion:
     build: ./
@@ -6,3 +6,5 @@ services:
     ports:
       - 8081:8081
     privileged: true
+    labels:
+      io.balena.features.kernel-modules: "1"
